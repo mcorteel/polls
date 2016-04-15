@@ -72,7 +72,7 @@ else $line = $l->t('No description provided.');
                         <div id="logo-claim" style="display:none;"><?php p($theme->getLogoClaim()); ?></div>
                         <div class="header-right">
                     <?php p($l->t('Already have an account?')); ?>
-                    <?php $url = OCP\Util::linkToAbsolute( '', 'index.php' ).'?redirect_url='.$urlGenerator->linkToRoute('polls_goto', array('poll_id' => $poll_id)); ?>
+                    <?php //$url = OCP\Util::linkToAbsolute( '', 'index.php' ).'?redirect_url='.$urlGenerator->linkToRoute('polls_goto', array('poll_id' => $poll_id)); ?>
                     <a href="<?php p($url); ?>"><?php p($l->t('Login')); ?></a>
                 </div>
             </div>
